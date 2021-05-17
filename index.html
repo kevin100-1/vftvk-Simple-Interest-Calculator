@@ -13,8 +13,13 @@
 .field label {
     display:inline;
 }
+.border {
+    border-width:1px;
+    border-color:gray;
+    padding:2px 1px;
+}
 .maindiv {
-    width:450px;
+    width:500px;
 }
 .center-inner {
  padding-left:5rem;
@@ -27,7 +32,7 @@
             <div class="form">
                 <div class="center-inner">
                 <div class="field">
-        Amount <input type="text"  id="principal" minlength="1" maxlength="10">
+        Amount <input type="text" class="border" id="principal" minlength="1" maxlength="10">
         </div>
 
         <div class="field">
@@ -38,7 +43,7 @@
 
         </div>
         <div class="field">
-        No. of Years <select id="years">
+        No. of Years <select class="border" id="years">
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>

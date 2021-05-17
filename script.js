@@ -1,8 +1,12 @@
 function isPrincipalValid(amount) {
   var val = parseFloat(amount);
-  if (val === undefined || val === NaN) {
+  if (val === undefined || isNaN(val) === true) {
       return false;
   }
+  if (val > 0) {
+      return true;
+  }
+  return false;
 }
 
 function updateRate() {
@@ -13,6 +17,10 @@ function updateRate() {
 function compute() {
     var p = document.getElementById("principal");
     var principal = p.value;
+    if (isPrincipalValid(principal) === false) {
+        alert("Enter a positive number");
+        return;
+    }
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var year = new Date().getFullYear()+parseInt(years);
