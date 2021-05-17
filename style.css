@@ -8,6 +8,7 @@ h1{color:grey;}
     background-color:white;
     color:black;
     padding:20px;
+    width:500px;
 }
 .maindiv h1 {
     text-align:center;
@@ -16,4 +17,23 @@ footer {
     padding-top:2rem;
     padding-bottom:1rem;
     text-align:center;
+}
+
+.field {
+    display:block;
+    padding:.5rem 0;
+}
+.field label {
+    display:inline;
+}
+.border {
+    border-width:1px;
+    border-color:gray;
+    padding:2px 1px;
+}
+.maindiv {
+    
+}
+.center-inner {
+ padding-left:5rem;
 }
