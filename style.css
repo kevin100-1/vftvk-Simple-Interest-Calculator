@@ -1,9 +1,9 @@
 body {background-color:black;font-family:arial;color:white}
 h1{color:grey;}
 .maindiv{
+    margin-top:3rem;
     margin-right:auto;
     margin-left:auto;
-    width:500px;
     border-radius:25px;
     background-color:white;
     color:black;

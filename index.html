@@ -4,18 +4,40 @@
         <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+
+.field {
+    display:block;
+    padding:.5rem 0;
+}
+.field label {
+    display:inline;
+}
+.maindiv {
+    width:450px;
+}
+.center-inner {
+ padding-left:5rem;
+}
+    </style>
     </head>
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
-            <div>
-        Amount <input type="text"  id="principal" minlength="1" maxlength="10">  <br/>
+            <div class="form">
+                <div class="center-inner">
+                <div class="field">
+        Amount <input type="text"  id="principal" minlength="1" maxlength="10">
+        </div>
+
+        <div class="field">
         Rate <input type="range"  onchange="updateRate()" id="rate" min="1" max="20" step="0.25" value="10.25">
         <span id="rate_val">
 10.25%
 </span>
 
-        <br/>
+        </div>
+        <div class="field">
         No. of Years <select id="years">
     <option value="1">1</option>
     <option value="2">2</option>
@@ -28,11 +50,12 @@
     <option value="9">9</option>
     <option value="10">10</option>
 </select>
-<br/>
+</div>
 
             <button onclick="compute()">Compute</button>
-            <div>
+            <div class="field">
               <span id="result"></span>
+            </div>
             </div>
           </div>
 
